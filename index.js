@@ -3,16 +3,15 @@ const http = require('http');
 const hostname = 'localhost';
 const port = 3000;
 
-var fs      = require("fs"),
-    pathFiles = "./files/",
-    pathView  = "./view/",
-    date      = new Date();
+var fs        = require("fs"),
+    log       = require("./module/log"),
+    pathView  = "./view/";
 
 http.createServer((req, res) => {
   res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
   
-  var logTxt = fs.createWriteStream(pathFiles + "log.txt", { flags: "a"});
-  logTxt.write(date + ": Acesso a página " + req.url + "\n");
+  //log(req.url);
+  log.doLog(req.url);
 
   if (req.url == "/")
   {
@@ -24,7 +23,7 @@ http.createServer((req, res) => {
   }
   else
   {
-      message = "Página não encotrada";
+      res.end("Página não encotrada");
   }
 
   
