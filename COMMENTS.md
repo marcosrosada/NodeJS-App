@@ -1,10 +1,10 @@
-**Este é um espaço para comentários referente ao projeto **
+**Este é um espaço para comentários referente ao projeto**
 
 ====================
 #### Positivos
 
 ```
-**-** Estrutura do projeto com fácil interpretação
+**-**Estrutura do projeto com fácil interpretação
 ```
 
 ====================
