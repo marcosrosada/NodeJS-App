@@ -1,4 +1,4 @@
-**Este é um espaço para comentários referente ao projeto**
+**Espaço para comentários referente ao projeto**
 ====================
 #### Positivos
 ```
